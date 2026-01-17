@@ -1,17 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple ToDo App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="welcome-container">
-    <h1>Welcome to Your To-Do List</h1>
-    <a href="todo.html" class="btn-start">Get Started</a>
-  </div>
+
+    <nav>
+        <div class="logo">
+            <span class="to-box">To</span><span class="do-box">Do</span>
+        </div>
+        <div class="nav-links">
+            <span id="home-link" class="active">Home</span>
+            <span id="about-link">About</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="home-page">
+            <div class="header-section">
+                <h1>Simple ToDo App</h1>
+                <p>This todo app for test design.</p>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="todo-input" placeholder="Write Text here . . .">
+                <button id="add-btn">+ Add New</button>
+            </div>
+
+            <div id="todo-list">
+                </div>
+
+            <div class="stats">
+                Total List : <span id="task-count">0</span>
+            </div>
+
+            <button id="mobile-add-btn">+ Add New</button>
+        </section>
+
+        <section id="about-page" class="hidden">
+            <div class="header-section">
+                <h1>Welcome .</h1>
+                <p>This is my first challenge with Html&CSS.</p>
+            </div>
+            <div class="illustration">
+                <img src="welcome.svg" alt="Illustration">
+            </div>
+            <div class="footer-text">
+                This app created by <span>Mariam</span>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+</html>
+
 
 
